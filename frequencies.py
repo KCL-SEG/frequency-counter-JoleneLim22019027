@@ -4,7 +4,5 @@ from collections import Counter
 
 def frequencies(items):
     frequencies = {}
-    for a in items:
-        if a not in frequencies:
-            frequencies[a] = items.count(a)
+    frequencies = Counter(items)
     return frequencies
